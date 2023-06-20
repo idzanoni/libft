@@ -6,7 +6,7 @@
 /*   By: izanoni <izanoni@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 15:56:16 by izanoni           #+#    #+#             */
-/*   Updated: 2023/05/19 19:10:20 by izanoni          ###   ########.fr       */
+/*   Updated: 2023/05/25 17:25:52 by izanoni          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ char	*ft_itoa(int n)
 		nb = -nb;
 	}
 	len = nlen(nb) + neg;
-	str = malloc(sizeof(char) * (len + 1));
+	str = malloc((len + 1) * sizeof(char));
 	if (!str)
 		return (NULL);
 	str[len] = '\0';

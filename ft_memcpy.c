@@ -6,7 +6,7 @@
 /*   By: izanoni <izanoni@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 17:30:47 by izanoni           #+#    #+#             */
-/*   Updated: 2023/05/11 20:45:24 by izanoni          ###   ########.fr       */
+/*   Updated: 2023/05/29 18:52:55 by izanoni          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 
 	cdest = (char *)dest;
 	csrc = (const char *)src;
+	if (cdest == NULL && csrc == NULL)
+		return (NULL);
 	i = 0;
 	while (i < n)
 	{

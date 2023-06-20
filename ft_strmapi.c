@@ -6,7 +6,7 @@
 /*   By: izanoni <izanoni@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 15:57:36 by izanoni           #+#    #+#             */
-/*   Updated: 2023/05/20 15:13:23 by izanoni          ###   ########.fr       */
+/*   Updated: 2023/05/26 19:21:08 by izanoni          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	unsigned int	i;
 	char			*newstr;
 
+	if (!s || !f)
+		return (NULL);
 	newstr = malloc((ft_strlen(s) + 1) * sizeof(char));
 	if (!newstr)
 		return (NULL);

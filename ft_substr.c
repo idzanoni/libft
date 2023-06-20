@@ -6,7 +6,7 @@
 /*   By: izanoni <izanoni@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 14:56:18 by izanoni           #+#    #+#             */
-/*   Updated: 2023/05/19 20:26:10 by izanoni          ###   ########.fr       */
+/*   Updated: 2023/05/29 17:56:05 by izanoni          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (!substring)
 		return (NULL);
 	i = 0;
-	while (s[start + i] != '0' && i < sublen)
+	while (s[start + i] != '\0' && i < sublen)
 	{
 		substring[i] = s[start + i];
 		i++;
